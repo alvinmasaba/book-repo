@@ -3,6 +3,18 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.3"
 
+gem "devise"
+
+# OmniAuth gems
+gem "omniauth-rails_csrf_protection"
+gem "omniauth-twitter2"
+gem "omniauth-instagram"
+gem "omniauth-google-oauth2"
+gem "omniauth-facebook"
+
+# SerpApi gem to grab images from Google
+gem "google_search_results" 
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 
