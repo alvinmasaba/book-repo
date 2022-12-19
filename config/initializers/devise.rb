@@ -275,6 +275,7 @@ Devise.setup do |config|
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   config.omniauth :facebook, Rails.application.credentials.dig(:facebook, :app_id), Rails.application.credentials.dig(:facebook, :app_secret)
   config.omniauth :instagram, Rails.application.credentials.dig(:instagram, :app_id), Rails.application.credentials.dig(:instagram, :app_secret)
+  config.omniauth :instagram, Rails.application.credentials.dig(:twitter, :client_id), Rails.application.credentials.dig(:twitter, :client_secret)
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
